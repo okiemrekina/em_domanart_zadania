@@ -1,0 +1,23 @@
+<!doctype html>
+<html class="no-js" lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container"></div>
+
+<script>
+    let body = document.querySelector('.container');
+    for (let i=0; i<19*29; i++) {
+        let div = document.createElement('div');
+        div.classList.add('element');
+        body.appendChild(div);
+    }
+</script>
+</body>
+</html>

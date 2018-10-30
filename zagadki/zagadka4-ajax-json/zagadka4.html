@@ -1,0 +1,55 @@
+<!doctype html>
+<html class="no-js" lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>*{box-sizing: border-box;}body{padding:0;margin:0;height:100vh;display:flex;justify-content:center;align-items:center;}.canvas div{width:30px;height:30px;float:left;}.canvas{font-size:20px;}</style>
+    </head>
+    <body>
+        <div class="canvas">
+            <div class="elem"></div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+        //tej zmiennej w tym zadaniu nie zmieniaj
+        var colors = ['#ffffff', '#000000', '#ff0000', '#60605F', '#FD89BD', '#FFE97F', '#FF6A00', '#FFD800', '#00FF21', '#0094FF', '#7437AD', '#AB51FF']
+
+
+        /*
+        -----------------------------------------
+        ZADANIE JEST TAKIE:
+        -----------------------------------------
+        1) za pomocą ajax wczytaj dane z adresu http://domanart.pl/CODERS/zagadki/zagadka-ajax-json/magic-code.json
+           ((uzyj odpowiedniego typu danych))
+        2) w pobranych danych jest tylko jedna właściwość - magic_code, która zawiera magiczny ciąg
+        3) Na bazie tego ciągu wygeneruj 2 wymiarową tablicę "tab":
+            - do głównego podziału użyj odpowiedniej metody i znaku "|"
+            - uzyskane kawałki zamień na tablice za pomocą znaku ","
+        W wyniku powinieneś uzyskać 2 wymiarową tablicę tab:
+            tab[0] = [0,0,0,0,0,0,0,...]
+            tab[1] = [0,0,0,2,2,2,2,...]
+
+        4) zrob petle po 2 wymiarowej uzyskanej talicy tab
+        5) Kazdą pobraną wartość z tablicy zapisuj jako:
+           tekst += '<div style="background:' + pobranyKolor + '"></div>;
+           gdzie pobranyKolor pobieraj z tablicy colors, gdzie indeks koloru pobierzesz z wartosci danego indeksu podtablicy tab
+        6) Po zakonczeniu kazdej tablicy 2-ego wymiaru, do tekstu dodawaj "<br>"
+        7) W rezultacie powinienes otrzymac rysunek
+        8) Nie bój się dodawać do kodu swoich funkcji, czy przenosić w odpowiednie miejsce zmiennych
+        */
+
+
+        //-----------------------------------------
+        //START
+        //-----------------------------------------
+        //zmienne które ci się przydadzą
+        var text = '';
+
+        //po wygenerowaniu tablicy i zrobieniu po niej pętli wstawiamy do div wygenerowany html
+        document.querySelector('.canvas').innerHTML = text;
+        </script>
+    </body>
+</html>
